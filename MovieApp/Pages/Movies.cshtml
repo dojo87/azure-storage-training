@@ -1,0 +1,24 @@
+﻿@page
+@model MovieApp.Pages.MoviesPageModel
+<div class="list-group">
+    <a href="#" class="list-group-item list-group-item-action d-flex gap-3 py-3 active">
+    Movies top 50
+  </a>
+    @foreach (var item in Model.Movies)
+    {
+        <a asp-controller="Movie" asp-action="BuyMovie" asp-route-id="@item.PartitionKey" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+           
+            <img src="@item.Image" class="rounded flex-shrink-0" alt="@item.Title">
+
+            <div class="d-flex gap-2 w-100 justify-content-between">
+                <div>
+                    <h6 class="mb-0">@Html.DisplayFor(m => item.Title)</h6>
+                </div>
+                <small class="opacity-50 text-nowrap">
+                        <button class="btn btn-primary rounded-pill px-3" type="button">@item.Rank</button>
+                </small>
+              </div>
+
+        </a>
+    }
+</div>
