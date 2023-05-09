@@ -6,7 +6,7 @@
   </a>
     @foreach (var item in Model.Movies)
     {
-        <a asp-controller="Movie" asp-action="BuyMovie" asp-route-id="@item.PartitionKey" class="list-group-item list-group-item-action d-flex gap-3 py-3">
+        <a asp-page="Movie" asp-route-id="@item.PartitionKey" class="list-group-item list-group-item-action d-flex gap-3 py-3">
            
             <img src="@item.Image" class="rounded flex-shrink-0" alt="@item.Title">
 

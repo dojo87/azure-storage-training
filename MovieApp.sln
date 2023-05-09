@@ -5,6 +5,11 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MovieApp", "MovieApp\MovieApp.csproj", "{F1249E29-4A62-4272-8BB8-94FCB60999CA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{7531C99F-B9B4-4A11-BA8D-FB369B4E0808}"
+	ProjectSection(SolutionItems) = preProject
+		setup.ps1 = setup.ps1
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
